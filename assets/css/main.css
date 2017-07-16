@@ -13,13 +13,11 @@ a {
 
 img {
   display: block;
-  width: 300px;
-  height: 300px;
-  /*min-width: 100%;*/
+  max-width: 100%;/*Устанавливает максимальную ширину элемента*/
 }
 
 .container {
-  min-width: 1050px;/*с учетом padding*/
+  max-width: 1050px;/*с учетом padding по 25px*/
   margin: 0 auto;
 }
 
@@ -28,7 +26,7 @@ img {
 .global-header {
   height: 300px;
   padding-top: 35px;
-  background: url("../img/arcade-fire.jpg") no-repeat 50% 0%;
+  background: url("../img/arcade-fire.jpg") no-repeat center top;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -36,26 +34,28 @@ img {
 .logo {
   display: block;
   width: 140px;
-  height: 76.7px;
+  height: 77px;
+  margin: 0 auto;
   background: url("../img/arcadefire-footer-logo.png") no-repeat 50% 50%;
   -webkit-background-size: cover;
   background-size: cover;
   text-indent: -9999px;/*отступ текста влево для h1*/
   overflow: hidden; /*все елементы, которые выходят за блок, обрезаются*/
-  margin: 0 auto;
 }
 
 .logo--min {
   width: 100px;
   height: 55px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 /*NAV*/
 
 .nav {
-  /*height: 50px;*/ /*убираем высоту*/
   padding: 10px 15px;/*для responsive под мобильные устройства*/
   line-height: 30px; /*изменяем line-height: 50px;*/
+  /*height: 50px;*/ /*убираем высоту*/
   font-size: 18px;
   font-weight: bold;
   background: #222;
@@ -67,22 +67,23 @@ img {
 }
 
 .nav__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
   text-align: center;
 }
 
 .nav__item {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 21px;
+  letter-spacing: 0.3px;
 }
 
 .nav__link {
   display: block;
-  transition: color 0.5s ease;
   line-height: 50px; /*на всю ширину блока*/
   color: rgba(255, 255, 255, .44);
+  transition: color 0.5s ease;
 }
 
 .nav__link:hover {
@@ -118,15 +119,9 @@ img {
 
 /*ALBUM*/
 
-.album {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
 .album__image {
-margin: auto;
-padding: 0;
+  width: 300px;
+  height: 300px;
 }
 
 .album__info {
@@ -165,5 +160,4 @@ padding: 0;
   line-height: 10px;
   font-size: 10px;
   color: #fff;
-
 }
