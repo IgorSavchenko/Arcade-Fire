@@ -1,0 +1,169 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+.container {
+  min-width: 1050px;/*с учетом padding*/
+  margin: 0 auto;
+}
+
+/*HEADER*/
+
+.global-header {
+  height: 300px;
+  padding-top: 35px;
+  background: url("../img/arcade-fire.jpg") no-repeat 50% 0%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.logo {
+  display: block;
+  width: 140px;
+  height: 76.7px;
+  background: url("../img/arcadefire-footer-logo.png") no-repeat 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-indent: -9999px;/*отступ текста влево для h1*/
+  overflow: hidden; /*все елементы, которые выходят за блок, обрезаются*/
+  margin: 0 auto;
+}
+
+.logo--min {
+  width: 100px;
+  height: 55px;
+}
+
+/*NAV*/
+
+.nav {
+  /*height: 50px;*/ /*убираем высоту*/
+  padding: 10px 15px;/*для responsive под мобильные устройства*/
+  line-height: 30px; /*изменяем line-height: 50px;*/
+  font-size: 18px;
+  font-weight: bold;
+  background: #222;
+}
+
+.nav--min {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav__item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav__link {
+  display: block;
+  transition: color 0.5s ease;
+  line-height: 50px; /*на всю ширину блока*/
+  color: rgba(255, 255, 255, .44);
+}
+
+.nav__link:hover {
+  color: rgba(255, 255, 255, .8);
+}
+
+.nav__item--active .nav__link {
+  color: #fff;
+}
+
+/*CONTENT*/
+
+/*ALBUMS*/
+
+.albums {
+  padding: 21px 0 39px; /*margin-top=45px (in zeplin) minus margin-top=25px in albums__item*/
+  margin: 0;
+  list-style: none;
+}
+
+.albums::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.albums__item {
+  float: left;
+  width: 33.3333333%;
+  padding: 0 25px;
+  margin-top: 24px;
+}
+
+/*ALBUM*/
+
+.album {
+  /*display: block;
+  margin: 0;
+  padding: 0;*/
+}
+
+.album__image {
+/*margin: auto;
+padding: 0;*/
+}
+
+.album__info {
+  margin-top: 8px;
+  text-align: center;
+  color: rgb(34, 34, 34);
+  line-height: 24px;
+}
+
+.album__title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.album__year {
+  font-size: 14px;
+}
+
+/*FOOTER*/
+
+.global-footer {
+  background: #222;
+}
+
+.copyright {
+  margin: 0 auto;
+  padding: 55px 15px;/*для responsive под мобильные устройства*/
+  text-align: center;
+  border: 1px solid rgba(236, 240, 241, .1);
+}
+
+.copyright__text {
+  margin: 25px 0 0;
+  line-height: 10px;
+  font-size: 10px;
+  color: #fff;
+
+}
