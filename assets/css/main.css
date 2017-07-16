@@ -119,14 +119,14 @@ img {
 /*ALBUM*/
 
 .album {
-  /*display: block;
+  display: block;
   margin: 0;
-  padding: 0;*/
+  padding: 0;
 }
 
 .album__image {
-/*margin: auto;
-padding: 0;*/
+margin: auto;
+padding: 0;
 }
 
 .album__info {
